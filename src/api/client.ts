@@ -4,7 +4,7 @@ import users from "./mock-data.json"
 export const searchUsersByName = async (
     name: string
 ): Promise<User[]> => {
-    return new Promise((resolve, _reject) => {
+    return new Promise((resolve, reject) => {
         try {
             const filtered = users.filter((user) =>
                 user.name
@@ -16,7 +16,7 @@ export const searchUsersByName = async (
             resolve(filtered);
         }
         catch (error) {
-            _reject(error)
+            reject(error)
         }
     });
 };
