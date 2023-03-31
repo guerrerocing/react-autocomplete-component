@@ -1,0 +1,11 @@
+.item {
+  padding: 10px 20px;
+}
+
+.item:hover {
+  background-color: #b9b9b9;
+}
+
+.active {
+  background-color: #b9b9b9;
+}
